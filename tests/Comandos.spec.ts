@@ -1,8 +1,8 @@
 import { describe, test, expect, vi } from "vitest";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
-import { ManejoFunko } from "../src/services/ManejoFunko";
-import "../src/interfaz/Comandos";
+import { ManejoFunko } from "../src/servidor/ManejoFunko";
+import "../src/cliente/Comandos";
 
 vi.mock("../src/services/ManejoFunko");
 

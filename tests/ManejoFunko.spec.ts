@@ -2,7 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import * as fs from 'fs';
 import * as path from 'path';
 // import chalk from 'chalk';
-import { ManejoFunko } from '../src/services/ManejoFunko';
+import { ManejoFunko } from '../src/servidor/ManejoFunko';
 import { Funko } from '../src/models/Funko';
 import { mostrarInfoFunko } from '../src/utils/chalkUtils';
 vi.mock('../src/utils/chalkUtils', () => ({
