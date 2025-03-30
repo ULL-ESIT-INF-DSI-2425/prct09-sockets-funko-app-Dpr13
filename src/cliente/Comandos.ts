@@ -23,7 +23,7 @@ const argv = yargs(hideBin(process.argv))
   }, (args) => {
     const funko: Funko = {
       id: args.id,
-      nombre: args.nombre,
+      nombre: args.nombre, 
       descripcion: args.descripcion,
       tipo: args.tipo,
       genero: args.genero,
