@@ -22,5 +22,7 @@ jobs:
       run: npm ci
     - name: Generating coverage information
       run: npm run coverage
-    - name: Coveralls GitHub Action
+    - name: Coveralls
       uses: coverallsapp/github-action@v2.3.6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
