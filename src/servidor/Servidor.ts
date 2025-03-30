@@ -5,7 +5,9 @@ import chalk from 'chalk';
 
 const server = net.createServer((socket) => {
   console.log(chalk.green('Cliente conectado'));
-
+  /**
+   * Escucha los datos enviados por el cliente.
+   */
   socket.on('data', (data) => {
     const request: RequestType = JSON.parse(data.toString());
     const manager = new ManejoFunko(request.usuario);
@@ -37,16 +39,22 @@ const server = net.createServer((socket) => {
       // socket.end();
     });
   });
-
+  /**
+   * Maneja el cierre de la conexión.
+   */
   socket.on('end', () => {
     console.log(chalk.green('Cliente desconectado'));
   });
-
+  /**
+   * Maneja los errores de la conexión.
+   */
   socket.on('error', (err) => {
     console.error(chalk.red('Error en el servidor:', err.message));
   });
 });
-
+/**
+ * Maneja el cierre del servidor.
+ */
 server.listen(60300, () => {
   console.log(chalk.bold('Servidor escuchando en el puerto 60300'));
 });
