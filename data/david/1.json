@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "nombre": "Goku",
+  "descripcion": "SSJ Funko",
+  "tipo": "Pop!",
+  "genero": "Ánime",
+  "franquicia": "Dragon Ball",
+  "numero": 10,
+  "exclusivo": true,
+  "caracteristicas": "Brilla en la oscuridad",
+  "valorMercado": 120
+}
